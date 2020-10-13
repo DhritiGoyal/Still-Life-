@@ -1,200 +1,227 @@
 /*
-  Coding from Life – Sketch 2: fluid layout
+  Coding from Life – Sketch 1: fixed layout
 
-  For sketch 2 you'll be positioning elements relative to a fluid container. This
-  means you'll need to use percentages when positioning and sizingelements within
-  your frame.
+  For sketch 1 you'll be positioning elements relative to an element with a fixed
+  width and height. For this sketch you can position elements by using pixel values.
 */
-
 
 body {
   background-color: black;
 }
 
 .frame {
-  width: 95vw;
-  height: 57vw;
-  background: white;
-  margin: 2.5vw auto;
+  width: 1000px;
+  height: 600px;
+  background: honeydew;
+  margin: 30px auto;
   position: relative;
 }
 
-.book-top{
-  width: 87%;
-  height: 50%;
-  background: lightpink;
-  position: absolute;
-  right:60%; 
-  bottom:0%; 
-  left:0%;
-}
-
-
 .candlebase{
-  background: orchid;
+  background: lightblue;
   position: absolute;
-  bottom: 20%;
-  right: 80%;
-  width: 9%;
-  height: 2%;
-  z-index:3;
-}
-
-.candlebody{
-  background:mediumpurple;
-  position: absolute;
-  bottom: 20%;
-  right: 83.5%;
-  width: 2%;
-  height: 25%;
+  bottom: 190px;
+  right: 60px;
+  width: 80px;
+  height: 20px;
   z-index:2;
 }
 
-.candlebodyup{
-   background:mediumpurple;
+.candlebody{
+  background:lightslategray;
   position: absolute;
-  bottom: 45%;
-  right: 82.5%;
-  width: 4%;
-  height: 20%;
+  bottom: 210px;
+  right: 90px;
+  width: 15px;
+  height: 120px;
+  z-index:3;
+}
+
+.candlebodyup{
+   background:lightslategray;
+  position: absolute;
+  bottom: 330px;
+  right: 83px;
+  width: 28px;
+  height: 50px;
   z-index:3;
 }
 
 .candle{
  background:powderblue;
   position: absolute;
-  bottom: 64%;
-  right: 83%;
-  width: 2.5%;
-  height: 14%;
+  bottom: 370px;
+  right: 84.5px;
+  width: 24px;
+  height: 50px;
   z-index:1;
 }
 
 .candlestick{
  background:black;
   position: absolute;
-  bottom: 78%;
-  right: 84%;
-  width: 0.6%;
-  height: 2%;
+  bottom: 420px;
+  right: 94px;
+  width: 4px;
+  height: 10px;
   z-index:2;
 }
 
 
 .candlebase2{
-  background: orchid;
+  background: lightblue;
   position: absolute;
-  bottom: 10%;
-  right: 65%;
-  width: 9%;
-  height: 3%;
+  bottom: 190px;
+  right: 210px;
+  width: 80px;
+  height: 20px;
   z-index:3;
 }
 
 .candlebody2{
-  background:mediumpurple;
+  background:lightslategray;
   position: absolute;
-  bottom: 10%;
-  right: 68%;
-  width: 2%;
-  height: 25%;
-  z-index:2;
+  bottom: 210px;
+  right: 240px;
+  width: 15px;
+  height: 120px;
+  z-index:3;
 }
 
 .candlebodyup2{
-   background:mediumpurple;
+   background:lightslategray;
   position: absolute;
-  bottom: 35%;
-  right: 67%;
-  width: 4%;
-  height: 20%;
+  bottom: 330px;
+  right: 235px;
+  width: 28px;
+  height: 50px;
   z-index:3;
 }
 .candle2{
  background:powderblue;
- position: absolute;
- bottom: 55%;
- right: 68%;
- width: 2.5%;
- height: 14%;
- z-index:1;
+  position: absolute;
+  bottom: 370px;
+  right: 237px;
+  width: 24px;
+  height: 50px;
+  z-index:1;
 }
 
 .candlestick2{
  background:black;
   position: absolute;
-  bottom: 68.8%;
-  right: 69%;
-  width: 0.6%;
-  height: 2%;
+  bottom: 420px;
+  right: 247px;
+  width: 4px;
+  height: 10px;
   z-index:2;
 }
 
 .vase{
-   position: absolute;
-  width:23%;
-  height:35%;
+  position: absolute;
+  width:210px;
+  height:200px;
   border-radius:90px;
-  background:mediumpurple;
-  top: 62%;
-  left: 45%;
+  background:lightslategrey;
+  top: 300px;
+  left: 220px;
   z-index:3;
 }
 
 .vaselid{
   background: slategrey;
-  width: 3%;
-  height: 4%;
-  top: 58%;
-  left: 55%;
-  border-radius: 70%;
+  width: 30px;
+  height: 30px;
+  top: 285px;
+  left: 305px;
+  border-radius: 90px;
   position: absolute;
   z-index: 6;
 }
 
 .vaseopen{
-  background: orchid;
-  width: 17%;
-  height: 6%;
-  top: 60%;
-  left:48%;
-  border-radius: 70%;
+  background: lightblue;
+  width: 190px;
+  height: 30px;
+  top: 300px;
+  left: 230px;
+  border-radius: 300px;
   position: absolute;
   z-index:3;
 }
 
 .vaseclose{
-  background: mediumpurple;
-  width: 19%;
-  height: 8%;
-  top: 90%;
-  left: 47%;
-  border-radius: 40%;
+  background: lightblue;
+  width: 170px;
+  height: 30px;
+  top: 470px;
+  left: 242px;
+  border-radius: 500px;
   position: absolute;
   z-index: 5;
 }
 
+
+.jartop {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 40px solid lightblue;
+  left: 490px;
+  bottom: 82px;
+  z-index:2;
+}
+
+.jarbottom{
+  position: absolute;
+  border-bottom: 35px solid lightslategray;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  height: 0px;
+  width: 32px;
+  left: 490px;
+  bottom: 60px;
+  z-index: 3; 
+}
+
+.jar{
+  width: 89px;
+  height: 230px;
+  background: lightslategray;
+  position: absolute;
+  bottom: 122px;
+  right: 416px;
+  z-index:2;
+}
+
 .pumpkin{
-  height: 26%;
-  width: 27%;
-  background-color: papayawhip;
+  height: 90px;
+  width: 120px;
+  background-color: lightslategray;
   border-radius: 50%;
   position:absolute;
-  z-index:1;
-  left:27%;
-  transform: rotate(-15deg);
-  bottom:32%;
+  z-index:2;
+  left:650px;
+  right:400px;
+  transform: rotate(-20deg);
+  bottom:20px;
 }
 
-.pumpkin2{
-  height: 20%;
-  width: 16%;
-  background-color: peachpuff;
-  border-radius: 50%;
-  position:absolute;
-  z-index:1;
-  left:69%;
-  transform: rotate(58deg);
-  bottom:9%;
+.book-top {
+  width: 370px;
+  height: 80px;
+  background: lightslategray;
+  position: absolute;
+  bottom: 110px;
+  right: 7px;
 }
 
+.table{
+    position: absolute;
+	bottom: 0px;
+	width:1000px;
+	height:148px;
+	background-color:royalblue;
+}
