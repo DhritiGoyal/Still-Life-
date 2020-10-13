@@ -1,0 +1,227 @@
+/*
+  Coding from Life – Sketch 1: fixed layout
+
+  For sketch 1 you'll be positioning elements relative to an element with a fixed
+  width and height. For this sketch you can position elements by using pixel values.
+*/
+
+body {
+  background-color: black;
+}
+
+.frame {
+  width: 1000px;
+  height: 600px;
+  background: honeydew;
+  margin: 30px auto;
+  position: relative;
+}
+
+.candlebase{
+  background: lightblue;
+  position: absolute;
+  bottom: 190px;
+  right: 60px;
+  width: 80px;
+  height: 20px;
+  z-index:2;
+}
+
+.candlebody{
+  background:lightslategray;
+  position: absolute;
+  bottom: 210px;
+  right: 90px;
+  width: 15px;
+  height: 120px;
+  z-index:3;
+}
+
+.candlebodyup{
+   background:lightslategray;
+  position: absolute;
+  bottom: 330px;
+  right: 83px;
+  width: 28px;
+  height: 50px;
+  z-index:3;
+}
+
+.candle{
+ background:powderblue;
+  position: absolute;
+  bottom: 370px;
+  right: 84.5px;
+  width: 24px;
+  height: 50px;
+  z-index:1;
+}
+
+.candlestick{
+ background:black;
+  position: absolute;
+  bottom: 420px;
+  right: 94px;
+  width: 4px;
+  height: 10px;
+  z-index:2;
+}
+
+
+.candlebase2{
+  background: lightblue;
+  position: absolute;
+  bottom: 190px;
+  right: 210px;
+  width: 80px;
+  height: 20px;
+  z-index:3;
+}
+
+.candlebody2{
+  background:lightslategray;
+  position: absolute;
+  bottom: 210px;
+  right: 240px;
+  width: 15px;
+  height: 120px;
+  z-index:3;
+}
+
+.candlebodyup2{
+   background:lightslategray;
+  position: absolute;
+  bottom: 330px;
+  right: 235px;
+  width: 28px;
+  height: 50px;
+  z-index:3;
+}
+.candle2{
+ background:powderblue;
+  position: absolute;
+  bottom: 370px;
+  right: 237px;
+  width: 24px;
+  height: 50px;
+  z-index:1;
+}
+
+.candlestick2{
+ background:black;
+  position: absolute;
+  bottom: 420px;
+  right: 247px;
+  width: 4px;
+  height: 10px;
+  z-index:2;
+}
+
+.vase{
+  position: absolute;
+  width:210px;
+  height:200px;
+  border-radius:90px;
+  background:lightslategrey;
+  top: 300px;
+  left: 220px;
+  z-index:3;
+}
+
+.vaselid{
+  background: slategrey;
+  width: 30px;
+  height: 30px;
+  top: 285px;
+  left: 305px;
+  border-radius: 90px;
+  position: absolute;
+  z-index: 6;
+}
+
+.vaseopen{
+  background: lightblue;
+  width: 190px;
+  height: 30px;
+  top: 300px;
+  left: 230px;
+  border-radius: 300px;
+  position: absolute;
+  z-index:3;
+}
+
+.vaseclose{
+  background: lightblue;
+  width: 170px;
+  height: 30px;
+  top: 470px;
+  left: 242px;
+  border-radius: 500px;
+  position: absolute;
+  z-index: 5;
+}
+
+
+.jartop {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 40px solid lightblue;
+  left: 490px;
+  bottom: 82px;
+  z-index:2;
+}
+
+.jarbottom{
+  position: absolute;
+  border-bottom: 35px solid lightslategray;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  height: 0px;
+  width: 32px;
+  left: 490px;
+  bottom: 60px;
+  z-index: 3; 
+}
+
+.jar{
+  width: 89px;
+  height: 230px;
+  background: lightslategray;
+  position: absolute;
+  bottom: 122px;
+  right: 416px;
+  z-index:2;
+}
+
+.pumpkin{
+  height: 90px;
+  width: 120px;
+  background-color: lightslategray;
+  border-radius: 50%;
+  position:absolute;
+  z-index:2;
+  left:650px;
+  right:400px;
+  transform: rotate(-20deg);
+  bottom:20px;
+}
+
+.book-top {
+  width: 370px;
+  height: 80px;
+  background: lightslategray;
+  position: absolute;
+  bottom: 110px;
+  right: 7px;
+}
+
+.table{
+    position: absolute;
+	bottom: 0px;
+	width:1000px;
+	height:148px;
+	background-color:royalblue;
+}
